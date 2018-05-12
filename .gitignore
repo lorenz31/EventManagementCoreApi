@@ -4,10 +4,10 @@
 
 .vscode/*
 
-EventManagementCoreApi/bin/*
-EventManagementCoreApi/obj/*
-EventManagementCoreApi/Properties
-EventManagementCoreApi/EventManagementCoreApi.csproj.user
+EventManagementCoreApi2/bin/*
+EventManagementCoreApi2/obj/*
+EventManagementCoreApi2/Properties
+EventManagementCoreApi2/EventManagementCoreApi.csproj.user
 
 BuddyCloudCoreApi2.JwtToken/bin/*
 BuddyCloudCoreApi2.JwtToken/obj/*
