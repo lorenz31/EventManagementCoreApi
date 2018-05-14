@@ -12,8 +12,8 @@ EventManagementCoreApi2/EventManagementCoreApi.csproj.user
 BuddyCloudCoreApi2.JwtToken/bin/*
 BuddyCloudCoreApi2.JwtToken/obj/*
 
-BuddyCloudCoreApi2.Core/bin/*
-BuddyCloudCoreApi2.Core/obj/*
+EventManagementCoreApi2.Core/bin/*
+EventManagementCoreApi2.Core/obj/*
 
 BuddyCloudCoreApi2.Services/bin/*
 BuddyCloudCoreApi2.Services/obj/*
@@ -26,5 +26,5 @@ BuddyCloudCoreApi2.UnitTest/obj/*
 BuddyCloudCoreApi2.Helper/bin/*
 BuddyCloudCoreApi2.Helper/obj/*
 
-BuddyCloudCoreApi2.DAL/bin/*
-BuddyCloudCoreApi2.DAL/obj/*
+EventManagementCoreApi2.DAL/bin/*
+EventManagementCoreApi2.DAL/obj/*
