@@ -17,4 +17,9 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\EventManagementCoreApi2.Core\EventManagementCoreApi2.Core.csproj" />
+    <ProjectReference Include="..\EventManagementCoreApi2.DAL\EventManagementCoreApi2.DAL.csproj" />
+  </ItemGroup>
+
 </Project>
