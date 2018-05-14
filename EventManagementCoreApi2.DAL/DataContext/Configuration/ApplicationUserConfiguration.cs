@@ -22,6 +22,10 @@ namespace EventManagementCoreApi2.DAL.DataContext.Configuration
                 .IsRequired(true);
 
             builder
+                .Property(u => u.Salt)
+                .IsRequired(true);
+
+            builder
                 .Property(u => u.DateCreated)
                 .IsRequired(true);
 
