@@ -3,7 +3,6 @@ using EventManagementCoreApi2.Core.Models;
 using EventManagementCoreApi2.Services.Interface;
 using EventManagementCoreApi2.DAL.Repository;
 using EventManagementCoreApi2.Security.Helper;
-using EventManagementCoreApi2.Services.Interface;
 
 using System.Threading.Tasks;
 using System;
