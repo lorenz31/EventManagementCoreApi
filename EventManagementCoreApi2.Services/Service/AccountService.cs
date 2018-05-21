@@ -1,6 +1,6 @@
 ﻿using EventManagementCoreApi2.Core.Identity;
 using EventManagementCoreApi2.Core.Models;
-using EventManagementCoreApi2.Services.Interfaces;
+using EventManagementCoreApi2.Services.Interface;
 using EventManagementCoreApi2.DAL.Repository;
 using EventManagementCoreApi2.Security.Helper;
 using EventManagementCoreApi2.Services.Interface;

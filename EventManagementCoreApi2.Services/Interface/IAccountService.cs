@@ -2,7 +2,7 @@
 using EventManagementCoreApi2.Core.Identity;
 using System.Threading.Tasks;
 
-namespace EventManagementCoreApi2.Services.Interfaces
+namespace EventManagementCoreApi2.Services.Interface
 {
     public interface IAccountService
     {

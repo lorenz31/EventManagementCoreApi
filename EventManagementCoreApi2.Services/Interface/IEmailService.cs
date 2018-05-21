@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EventManagementCoreApi2.Services.Interfaces
+namespace EventManagementCoreApi2.Services.Interface
 {
     public interface IEmailService
     {

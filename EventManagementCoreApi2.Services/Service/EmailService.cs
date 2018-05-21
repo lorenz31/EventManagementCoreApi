@@ -1,4 +1,4 @@
-﻿using EventManagementCoreApi2.Services.Interfaces;
+﻿using EventManagementCoreApi2.Services.Interface;
 using System;
 using System.Collections.Generic;
 using System.Net;
