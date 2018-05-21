@@ -9,13 +9,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventManagementCoreApi2.Cor
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventManagementCoreApi2.DAL", "EventManagementCoreApi2.DAL\EventManagementCoreApi2.DAL.csproj", "{EE531819-7ADF-4A93-9D93-D17FB12E0664}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventManagementCoreApi2.Services", "EventManagementCoreApi2.Services\EventManagementCoreApi2.Services.csproj", "{4EEF6DA4-FE44-4B29-943B-44A9E10EB8D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventManagementCoreApi2.Services", "EventManagementCoreApi2.Services\EventManagementCoreApi2.Services.csproj", "{4EEF6DA4-FE44-4B29-943B-44A9E10EB8D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventManagementCoreApi2.Security", "EventManagementCoreApi2.Security\EventManagementCoreApi2.Security.csproj", "{B7203766-75AF-4E09-A176-424EA0A3DD82}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventManagementCoreApi2.Security", "EventManagementCoreApi2.Security\EventManagementCoreApi2.Security.csproj", "{B7203766-75AF-4E09-A176-424EA0A3DD82}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventManagementCoreApi2.UnitTest", "EventManagementCoreApi2.UnitTest\EventManagementCoreApi2.UnitTest.csproj", "{675E6FAC-084E-4A05-82A8-B0621D9B0561}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventManagementCoreApi2.UnitTest", "EventManagementCoreApi2.UnitTest\EventManagementCoreApi2.UnitTest.csproj", "{675E6FAC-084E-4A05-82A8-B0621D9B0561}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventManagementCoreApi2.Helpers", "EventManagementCoreApi2.Helpers\EventManagementCoreApi2.Helpers.csproj", "{EC706EEA-12C1-4641-A3D5-1E44498816B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventManagementCoreApi2.Helpers", "EventManagementCoreApi2.Helpers\EventManagementCoreApi2.Helpers.csproj", "{EC706EEA-12C1-4641-A3D5-1E44498816B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventManagementCoreApi2.Utility", "EventManagementCoreApi2.Utility\EventManagementCoreApi2.Utility.csproj", "{08061A54-8AB6-45F3-9B62-D75A7444F8BE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{EC706EEA-12C1-4641-A3D5-1E44498816B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC706EEA-12C1-4641-A3D5-1E44498816B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC706EEA-12C1-4641-A3D5-1E44498816B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08061A54-8AB6-45F3-9B62-D75A7444F8BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08061A54-8AB6-45F3-9B62-D75A7444F8BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08061A54-8AB6-45F3-9B62-D75A7444F8BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08061A54-8AB6-45F3-9B62-D75A7444F8BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

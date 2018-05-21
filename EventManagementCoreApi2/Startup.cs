@@ -72,6 +72,7 @@ namespace EventManagementCoreApi2
                     );
 
             services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+            services.AddSingleton<IEmailService, EmailService>();
             services.AddTransient<IAccountService, AccountService>();
         }
 
