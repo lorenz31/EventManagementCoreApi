@@ -1,6 +1,6 @@
 ﻿using EventManagementCoreApi2.DAL.DataContext;
 using EventManagementCoreApi2.DAL.Repository;
-using EventManagementCoreApi2.Services.Interfaces;
+using EventManagementCoreApi2.Services.Interface;
 using EventManagementCoreApi2.Services.Service;
 using EventManagementCoreApi2.Security.JWT;
 
