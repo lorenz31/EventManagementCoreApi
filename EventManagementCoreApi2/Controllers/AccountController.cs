@@ -1,6 +1,6 @@
 ﻿using EventManagementCoreApi2.Core.Identity;
 using EventManagementCoreApi2.Core.Response;
-using EventManagementCoreApi2.Services.Interfaces;
+using EventManagementCoreApi2.Services.Interface;
 
 using System;
 using System.Collections.Generic;

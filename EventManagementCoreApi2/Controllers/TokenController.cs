@@ -1,4 +1,4 @@
-﻿using EventManagementCoreApi2.Services.Interfaces;
+﻿using EventManagementCoreApi2.Services.Interface;
 using EventManagementCoreApi2.Core.Identity;
 using EventManagementCoreApi2.Security.JWT;
 using EventManagementCoreApi2.Core.Response;
