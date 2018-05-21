@@ -9,6 +9,8 @@ namespace EventManagementCoreApi2.Core.Models
         public Guid Id { get; set; }
         public DateTime Time { get; set; }
         public string Detail { get; set; }
+
+        public Guid EventId { get; set; }
         public Event Event { get; set;  }
     }
 }

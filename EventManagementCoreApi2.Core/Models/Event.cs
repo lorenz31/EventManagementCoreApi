@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EventManagementCoreApi2.Core.Identity;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -11,7 +12,11 @@ namespace EventManagementCoreApi2.Core.Models
         public string Location { get; set; }
         public string Type { get; set; }
         public int Status { get; set; }
-        public EventDetail Detail { get; set; }
         public ICollection<EventAttendee> Attendees { get; set; }
+
+        public EventDetail Detail { get; set; }
+
+        public Guid UserId { get; set; }
+        public ApplicationUser User { get; set; }
     }
 }
