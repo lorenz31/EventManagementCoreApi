@@ -28,3 +28,6 @@ EventManagementCoreApi2.Services/obj/*
 
 EventManagementCoreApi2.UnitTest/bin/*
 EventManagementCoreApi2.UnitTest/obj/*
+
+EventManagementCoreApi2.Utility/bin/*
+EventManagementCoreApi2.Utility/obj/*
