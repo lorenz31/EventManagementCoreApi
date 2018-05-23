@@ -21,6 +21,7 @@
   <ItemGroup>
     <ProjectReference Include="..\EventManagementCoreApi2.Core\EventManagementCoreApi2.Core.csproj" />
     <ProjectReference Include="..\EventManagementCoreApi2.DAL\EventManagementCoreApi2.DAL.csproj" />
+    <ProjectReference Include="..\EventManagementCoreApi2.Helpers\EventManagementCoreApi2.Helpers.csproj" />
     <ProjectReference Include="..\EventManagementCoreApi2.Services\EventManagementCoreApi2.Services.csproj" />
   </ItemGroup>
 

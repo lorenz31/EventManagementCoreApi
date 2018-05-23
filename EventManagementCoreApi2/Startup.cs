@@ -72,8 +72,10 @@ namespace EventManagementCoreApi2
                     );
 
             services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+            services.AddTransient<IEventRepository, EventRepository>();
             services.AddSingleton<IEmailService, EmailService>();
             services.AddTransient<IAccountService, AccountService>();
+            services.AddTransient<IEventService, EventService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
