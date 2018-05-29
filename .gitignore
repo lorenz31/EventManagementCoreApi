@@ -6,7 +6,6 @@
 
 EventManagementCoreApi2/bin/*
 EventManagementCoreApi2/obj/*
-EventManagementCoreApi2/Properties
 EventManagementCoreApi2/EventManagementCoreApi.csproj.user
 
 EventManagementCoreApi2.Core/bin/*
