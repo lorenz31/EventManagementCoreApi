@@ -31,5 +31,28 @@ namespace EventManagementCoreApi2.DAL.Repository
                 return false;
             }
         }
+
+        public async Task<bool> AddEventDetailAsync(EventDetail obj)
+        {
+            try
+            {
+                var detail = new EventDetail
+                {
+                    Id = Guid.NewGuid(),
+                    Time = DateTime.UtcNow,
+                    Detail = obj.Detail,
+                    EventId = Guid.Parse(obj.EventId.ToString())
+                };
+
+                _dbContext.EventDetail.Add(detail);
+                await _dbContext.SaveChangesAsync();
+
+                return true;
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
+        }
     }
 }

@@ -42,5 +42,20 @@ namespace EventManagementCoreApi2.Services.Service
 
             return isAdded ? true : false;
         }
+
+        public async Task<bool> AddEventDetailAsync(EventDetail obj)
+        {
+            var detail = new EventDetail
+            {
+                Id = Guid.NewGuid(),
+                Time = DateTime.UtcNow,
+                Detail = obj.Detail,
+                EventId = Guid.Parse(obj.EventId.ToString())
+            };
+
+            var isAdded = await _eventRepo.AddEventDetailAsync(detail);
+
+            return isAdded ? true : false;
+        }
     }
 }

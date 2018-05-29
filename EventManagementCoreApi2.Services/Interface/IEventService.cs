@@ -9,5 +9,6 @@ namespace EventManagementCoreApi2.Services.Interface
     public interface IEventService
     {
         Task<bool> AddEventAsync(Event obj);
+        Task<bool> AddEventDetailAsync(EventDetail obj);
     }
 }

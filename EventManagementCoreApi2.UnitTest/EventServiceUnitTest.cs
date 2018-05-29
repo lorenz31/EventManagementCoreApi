@@ -61,22 +61,19 @@ namespace EventManagementCoreApi2.UnitTest
         [TestMethod]
         public async Task Event_AddEventDetailAsync_Test()
         {
-            string eventId = "5FC2F0D1-B90E-4E66-8018-E25B5AA1862C";
+            string eventId = "7F356397-938B-4A2F-8DB3-5A60FDF6CEC7";
 
-            if (!string.IsNullOrEmpty(eventId.ToString()))
+            var detail = new EventDetail
             {
-                var detail = new EventDetail
-                {
-                    Id = Guid.NewGuid(),
-                    Time = DateTime.UtcNow,
-                    Detail = "2 day Xamarin Forms workshop",
-                    EventId = Guid.Parse(eventId)
-                };
+                Id = Guid.NewGuid(),
+                Time = DateTime.UtcNow,
+                Detail = "Angular 5 workshop",
+                EventId = Guid.Parse(eventId)
+            };
 
-                var isAdded = await eventDetailRepo.AddAsync(detail);
+            var isAdded = await eventRepo.AddEventDetailAsync(detail);
 
-                Assert.IsTrue(isAdded);
-            }
+            Assert.IsTrue(isAdded);
         }
     }
 }

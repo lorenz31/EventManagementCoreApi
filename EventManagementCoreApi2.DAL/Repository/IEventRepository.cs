@@ -9,5 +9,6 @@ namespace EventManagementCoreApi2.DAL.Repository
     public interface IEventRepository
     {
         Task<bool> AddEventAsync(Event obj);
+        Task<bool> AddEventDetailAsync(EventDetail obj);
     }
 }

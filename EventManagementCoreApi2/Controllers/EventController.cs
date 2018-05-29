@@ -46,5 +46,27 @@ namespace EventManagementCoreApi2.Controllers
 
             return BadRequest(new ResponseModel { Status = false, Message = "Error adding event." });
         }
+
+        [HttpPost]
+        [Route("detail")]
+        public async Task<IActionResult> PostEventDetail(string userid, [FromBody] EventDetail obj)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(new ResponseModel { Status = false, Message = "Invalid payload." });
+
+            var isValidId = GuidParserHelper.ParseStringToGuid(userid);
+
+            if (isValidId)
+            {
+                var isAdded = await _eventService.AddEventDetailAsync(obj);
+
+                if (isAdded)
+                    return Ok(new ResponseModel { Status = true, Message = "Event detail successfully added." });
+                else
+                    return BadRequest(new ResponseModel { Status = false, Message = "Error adding event detail." });
+            }
+
+            return BadRequest(new ResponseModel { Status = false, Message = "Error adding event detail." });
+        }
     }
 }
