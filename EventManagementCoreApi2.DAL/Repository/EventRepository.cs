@@ -5,6 +5,8 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
 namespace EventManagementCoreApi2.DAL.Repository
 {
@@ -53,6 +55,13 @@ namespace EventManagementCoreApi2.DAL.Repository
             {
                 return false;
             }
+        }
+
+        public async Task<List<Event>> GetEventsAsync(Guid userid)
+        {
+            var events = await _dbContext.Events.Include("Detail").ToListAsync();
+
+            return events;
         }
     }
 }

@@ -75,5 +75,15 @@ namespace EventManagementCoreApi2.UnitTest
 
             Assert.IsTrue(isAdded);
         }
+
+        [TestMethod]
+        public async Task Event_GetUserEventsAsync_Test()
+        {
+            var userId = Guid.Parse("D591E665-54F2-4D39-8E66-08D5BF33FD98");
+
+            var events = await eventRepo.GetEventsAsync(userId);
+
+            Assert.IsTrue(events.Count > 0);
+        }
     }
 }

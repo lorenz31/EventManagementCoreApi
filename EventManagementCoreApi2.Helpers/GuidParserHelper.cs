@@ -15,5 +15,10 @@ namespace EventManagementCoreApi2.Helpers
             else
                 return false;
         }
+
+        public static Guid StringToGuid(string input)
+        {
+            return Guid.Parse(input);
+        }
     }
 }

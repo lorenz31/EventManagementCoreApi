@@ -10,5 +10,6 @@ namespace EventManagementCoreApi2.Services.Interface
     {
         Task<bool> AddEventAsync(Event obj);
         Task<bool> AddEventDetailAsync(EventDetail obj);
+        Task<List<Event>> GetEventsAsync(Guid userid);
     }
 }

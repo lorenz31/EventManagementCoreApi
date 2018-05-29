@@ -57,5 +57,12 @@ namespace EventManagementCoreApi2.Services.Service
 
             return isAdded ? true : false;
         }
+
+        public async Task<List<Event>> GetEventsAsync(Guid userid)
+        {
+            List<Event> events = await _eventRepo.GetEventsAsync(userid);
+
+            return events ?? null;
+        }
     }
 }

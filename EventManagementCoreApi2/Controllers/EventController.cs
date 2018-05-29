@@ -68,5 +68,23 @@ namespace EventManagementCoreApi2.Controllers
 
             return BadRequest(new ResponseModel { Status = false, Message = "Error adding event detail." });
         }
+
+        [HttpGet]
+        [Route("list")]
+        public async Task<IActionResult> GetUserEvents(string userid)
+        {
+            var isValidId = GuidParserHelper.ParseStringToGuid(userid);
+
+            if (isValidId)
+            {
+                var userId = GuidParserHelper.StringToGuid(userid);
+
+                var events = await _eventService.GetEventsAsync(userId);
+
+                return Ok(events);
+            }
+
+            return BadRequest(new ResponseModel { Status = false, Message = "Invalid user id." });
+        }
     }
 }
